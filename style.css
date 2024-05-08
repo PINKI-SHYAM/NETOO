@@ -1,0 +1,292 @@
+@font-face {
+    font-family: 'platypi';
+    src: url('./fonts/Platypi-Italic-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'platypi1';
+    src: url('./fonts/Platypi-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'lora';
+    src: url(../fonts/Lora-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'lora1';
+    src: url(../fonts/Lora-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'BriemHand';
+    src: url(../fonts/BriemHand-VariableFont_wght.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*subheading 's color and font*/
+.subheading{
+    font-family: 'playtypi1',cursive;
+    color:blue;
+}
+
+/*main heading*/
+.heading{
+    font-family:'platypi', cursive ;
+}
+
+/*paragraph font*/
+.font{
+    font-family: 'lora';
+}
+
+/*font of team and testimorial*/
+.HLO H4{
+    font-family: 'playtpi';
+}
+.hlo span{
+    color:blue;
+    font-family: 'lora';
+    float:right;
+    display: block;
+}
+/*carousel you can also remove this if you are not using carousel*/
+.slider {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.slider::before {
+    content: "",
+        display block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.7;
+}
+.headings {
+    bottom: 180px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.headings h5 {
+    font-size: 100px;
+    font-weight: 700;
+    font-family: 'platypi';
+}
+.headings p {
+    font-size: 30;
+    top: 2rem;
+    color: blue;
+    font-family: 'lora1';
+}
+
+/*for portfolio*/
+.portfolio {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.portfolio img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.gallery {
+	margin: 8px -16px;
+}
+.gallery,
+.gallery>.column {
+	padding: 8px;
+}
+.column {
+	float: left;
+	width: 33.33%;
+	display: none;
+}
+.gallery:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.show {
+	display: block;
+}
+.PORT {
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: white;
+	cursor: pointer;
+}
+.PORT:hover {
+	background-color: #2c08fa;
+}
+.PORT.ACTIVE {
+	background-color: dodgerblue;
+	color: white;
+}
+
+/*for image in counter*/
+.counter-image {
+    height: 70vh;
+    width: 400px;
+}
+
+/*for counter*/
+.counter {
+    padding: 20px 0;
+    width: 100%;
+}
+.counter img {
+    display: block;
+    height: 50px;
+    color: #131212;
+    float: left;
+    cursor:pointer;
+}
+.counter span {
+    font-size: 36px;
+    line-height: 30px;
+    display: block;
+    font-weight: 700;
+    color: #151515;
+    margin-left: 50px;
+}
+
+/*for team section*/
+.support {
+    background: white;
+    padding: 60px 0;
+}
+.team {
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.team img {
+    position: relative;
+    overflow: hidden;
+}
+
+/*for testimorial section*/
+.start {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #080808;
+    background-color: rgb(7, 7, 7);
+}
+.testimorial {
+    position: relative;
+    width: 1324px;
+    min-width: 350px;
+    min-height: 250px;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+.slides {
+    width: 300%;
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+}
+.box {
+    width: 1324px;
+    min-height: 100%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 10px;
+}
+.style {
+    width: 120%;
+    min-height: 100%;
+    height: auto;
+    margin-left: 20px;
+    position: relative;
+    padding-bottom: 50px;
+}
+.comment {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 30px;
+    font-family: 'BriemHand',cursive;
+}
+.names{
+    color:blue;
+    float:right;
+}
+.indicator {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.indicator button {
+    background: none;
+    border: none;
+    outline: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: .5s;
+}
+button.active {
+    width: 40px;
+    border-radius: 50px;
+    background: #fff;
+}
+
+@media (max-width: 800px) {
+    .testimorial {
+        width: 50%;
+        margin: auto;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+
+    .style {
+        width: 100%;
+        min-height: auto;
+        margin-left: 0;
+    }
+}
+
+/*CONTACT FORM*/
+.LABEL{
+    float:left;
+    font:'playtypi1',cursive;
+}
+
+/* padding between symbols in footer*/
+.padding{
+    padding: 20px 15px;
+}
+.footer{
+    font-size: 30px;
+    font-family: 'playtpi';
+    text-decoration: wavy;
+}
+
